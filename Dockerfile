@@ -16,6 +16,7 @@ FROM node:18.20-slim
 
 ARG app_uid=9500
 ARG app_dir=/app
+ARG GOARCH=aarch64
 
 RUN useradd -u ${app_uid} -d /home/app -m -s /sbin/nologin app
 # The WORKDIR directive set the ownership of the work directory to root instead
